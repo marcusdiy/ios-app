@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "LoginViewController.viewDidLayoutSubviews():LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "contentRect">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ForgotViewController.viewDidLoad():ForgotViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UIDevice.current.orientation.isLandscape">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "KeyboardProtocol.keyboardDidShow(notification:):KeyboardProtocol.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "activeField.frame.origin">
+            </PersistentString>
+            <PersistentString
+               value = "scrollView?.contentSize">
+            </PersistentString>
+            <PersistentString
+               value = "activeField.frame.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in LoginViewController.viewWillTransition(to:with:):LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.loginView?.mScrollView.isScrollEnabled">
+            </PersistentString>
+            <PersistentString
+               value = "self.view.frame.size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginViewController.tappedAwayFromK():LoginViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "LoginView.awakeFromNib():LoginView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ForgotViewController.access():ForgotViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginView.mEmailBtnIcon.didset:LoginView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mEmailBtnIcon">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

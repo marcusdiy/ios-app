@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="CeG-VU-dhZ">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HDR-EU-sIM">
+                <rect key="frame" x="0.0" y="0.0" width="270" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PlF-mm-y4A">
+                        <rect key="frame" x="14" y="11.5" width="242" height="27"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gx2-ce-SyH">
+                        <rect key="frame" x="22" y="14.5" width="226" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="4Df-tL-yRR"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <font key="NSFont" size="17" name="BerlinSansFB-Reg"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6q-DN-ov1">
+                        <rect key="frame" x="0.0" y="47" width="270" height="3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="4Ff-DW-F4O"/>
+                        </constraints>
+                    </view>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lym-j4-rli">
+                        <rect key="frame" x="16" y="8" width="238" height="31"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Lorem">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="17" name="BerlinSansFB-Reg"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <color key="backgroundColor" name="menuGreen"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gx2-ce-SyH" secondAttribute="trailing" constant="22" id="4gQ-HY-DhK"/>
+                    <constraint firstItem="PlF-mm-y4A" firstAttribute="bottom" secondItem="gx2-ce-SyH" secondAttribute="bottom" constant="3" id="4n3-5K-IzW"/>
+                    <constraint firstItem="d6q-DN-ov1" firstAttribute="leading" secondItem="HDR-EU-sIM" secondAttribute="leading" id="ABi-aB-Mtq"/>
+                    <constraint firstItem="Lym-j4-rli" firstAttribute="top" secondItem="HDR-EU-sIM" secondAttribute="top" constant="8" id="B7K-Oo-dmf"/>
+                    <constraint firstItem="PlF-mm-y4A" firstAttribute="leading" secondItem="gx2-ce-SyH" secondAttribute="leading" constant="-8" id="KYF-GM-FEA"/>
+                    <constraint firstAttribute="trailing" secondItem="d6q-DN-ov1" secondAttribute="trailing" id="Lrc-3M-LkL"/>
+                    <constraint firstItem="d6q-DN-ov1" firstAttribute="top" secondItem="Lym-j4-rli" secondAttribute="bottom" constant="8" id="WNF-l9-ksO"/>
+                    <constraint firstItem="gx2-ce-SyH" firstAttribute="centerY" secondItem="HDR-EU-sIM" secondAttribute="centerY" id="WO0-uR-Vak"/>
+                    <constraint firstItem="Lym-j4-rli" firstAttribute="leading" secondItem="HDR-EU-sIM" secondAttribute="leading" constant="16" id="WpC-x0-imR"/>
+                    <constraint firstAttribute="trailing" secondItem="Lym-j4-rli" secondAttribute="trailing" constant="16" id="aLS-6F-lbx"/>
+                    <constraint firstItem="gx2-ce-SyH" firstAttribute="leading" secondItem="HDR-EU-sIM" secondAttribute="leading" constant="22" id="g4v-gY-wCd"/>
+                    <constraint firstItem="gx2-ce-SyH" firstAttribute="centerX" secondItem="HDR-EU-sIM" secondAttribute="centerX" id="qOg-dl-9Id"/>
+                    <constraint firstAttribute="bottom" secondItem="d6q-DN-ov1" secondAttribute="bottom" id="saw-6h-DtR"/>
+                    <constraint firstItem="PlF-mm-y4A" firstAttribute="top" secondItem="gx2-ce-SyH" secondAttribute="top" constant="-3" id="xhW-lj-mqY"/>
+                    <constraint firstItem="PlF-mm-y4A" firstAttribute="trailing" secondItem="gx2-ce-SyH" secondAttribute="trailing" constant="8" id="y3v-JR-9wd"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="Lym-j4-rli"/>
+                    </mask>
+                </variation>
+            </collectionViewCellContentView>
+            <size key="customSize" width="270" height="50"/>
+            <point key="canvasLocation" x="411.59420289855075" y="145.98214285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="menuGreen">
+            <color red="0.0" green="0.43529411764705883" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

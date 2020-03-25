@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OBI-aA-sWb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController restorationIdentifier="LoginViewController" storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="JamesJoice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dsr-cA-wP2"/>
+                    <connections>
+                        <segue destination="zG8-h1-b5f" kind="show" identifier="toRegistration" id="OHG-iA-d67"/>
+                        <segue destination="voo-hM-hZz" kind="show" identifier="toForgot" id="jc7-5g-qoP"/>
+                        <segue destination="oiA-62-LWW" kind="show" identifier="toMain" id="20u-KE-5CT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471.01449275362324" y="-9.375"/>
+        </scene>
+        <!--main-->
+        <scene sceneID="ye5-1m-adL">
+            <objects>
+                <viewController restorationIdentifier="MenuViewController" storyboardIdentifier="MenuViewController" modalPresentationStyle="fullScreen" id="n0V-VO-Bdf" customClass="MenuViewController" customModule="JamesJoice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6uC-iD-5Ds">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resources_logo" translatesAutoresizingMaskIntoConstraints="NO" id="4rd-P7-uVF">
+                                <rect key="frame" x="183" y="-44" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="nsd-Cd-RlA"/>
+                                    <constraint firstAttribute="width" constant="48" id="v0S-vO-KGK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4rd-P7-uVF" firstAttribute="top" secondItem="6uC-iD-5Ds" secondAttribute="top" constant="-44" id="SC8-qz-X0R"/>
+                            <constraint firstItem="4rd-P7-uVF" firstAttribute="centerX" secondItem="p69-G3-Q1T" secondAttribute="centerX" id="Zj4-Qz-5j8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p69-G3-Q1T"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="main" id="u28-AV-nXF"/>
+                    <connections>
+                        <segue destination="Pp6-5a-9H8" kind="show" identifier="toCart" id="bq9-5F-Vrp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgo-Df-FNT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2479.7101449275365" y="-447.32142857142856"/>
+        </scene>
+        <!--Shopping Cart View Controller-->
+        <scene sceneID="pmJ-cJ-6UN">
+            <objects>
+                <viewController restorationIdentifier="ShoppingCartViewController" storyboardIdentifier="ShoppingCartViewController" modalPresentationStyle="fullScreen" id="Pp6-5a-9H8" customClass="ShoppingCartViewController" customModule="JamesJoice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZVq-bE-axb" customClass="SCNView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="xAo-rK-eip"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="98H-G5-7rI"/>
+                    <connections>
+                        <segue destination="AXi-Ik-cmP" kind="show" identifier="toDetail" id="W4B-ch-hbo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfY-M9-adu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3599" y="-739"/>
+        </scene>
+        <!--Order Detail Controller-->
+        <scene sceneID="vBH-Pm-CCs">
+            <objects>
+                <viewController restorationIdentifier="OrderDetailController" storyboardIdentifier="OrderDetailController" id="AXi-Ik-cmP" customClass="OrderDetailController" customModule="JamesJoice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fOu-d5-Zgg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="xVJ-fo-fJg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XLP-bc-9aj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aql-oB-SA5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4571" y="-737"/>
+        </scene>
+        <!--Forgot View Controller-->
+        <scene sceneID="ex1-RM-eIA">
+            <objects>
+                <viewController restorationIdentifier="ForgotViewController" modalPresentationStyle="fullScreen" id="voo-hM-hZz" customClass="ForgotViewController" customModule="JamesJoice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gCZ-oe-QLa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="USC-0U-aGH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CnR-5G-oZ8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="maB-pZ-1re" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588" y="362"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="kQj-qS-Aml">
+            <objects>
+                <viewController restorationIdentifier="RegisterViewController" storyboardIdentifier="RegisterViewController" modalPresentationStyle="fullScreen" id="zG8-h1-b5f" customClass="RegisterViewController" customModule="JamesJoice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Za-qP-YrK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="WLF-kt-RHS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wdv-qz-ikZ"/>
+                    <connections>
+                        <segue destination="voo-hM-hZz" kind="show" identifier="toForgot" id="7b1-Zo-YUV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YTf-zY-fVw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471" y="721"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qac-4y-uoO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="OBI-aA-sWb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YNj-MG-rze">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4vz-xM-7ab"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HEg-1Z-HbF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439.13043478260875" y="-9.375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mxU-Kx-rO8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="oiA-62-LWW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="2gi-FC-wQs"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="8zK-mr-VMX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="colorPrimary"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="n0V-VO-Bdf" kind="relationship" relationship="rootViewController" id="NjP-MX-CAn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="esV-Hk-wkS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569.5652173913045" y="-447.32142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="resources_logo" width="500" height="500"/>
+        <namedColor name="colorPrimary">
+            <color red="0.0" green="0.58399999141693115" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jc7-5g-qoP"/>
+    </inferredMetricsTieBreakers>
+</document>

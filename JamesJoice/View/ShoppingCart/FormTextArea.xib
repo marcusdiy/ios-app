@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="118"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FDn-4K-mxR">
+                    <rect key="frame" x="0.0" y="4" width="414" height="110"/>
+                    <color key="backgroundColor" name="editBack"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="klf-G6-3qD"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Lorem ">
+                            <attributes>
+                                <color key="NSColor" name="colorPrimary"/>
+                                <font key="NSFont" size="17" name="BerlinSansFB-Reg"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FDn-4K-mxR" secondAttribute="trailing" id="CBv-47-n3b"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FDn-4K-mxR" secondAttribute="bottom" constant="4" id="KFx-Ph-1Ka"/>
+                <constraint firstItem="FDn-4K-mxR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="OOx-2k-xNC"/>
+                <constraint firstItem="FDn-4K-mxR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="ord-4M-UdB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="3.3482142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="colorPrimary">
+            <color red="0.0" green="0.58399999141693115" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="editBack">
+            <color red="0.91399997472763062" green="0.96100002527236938" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

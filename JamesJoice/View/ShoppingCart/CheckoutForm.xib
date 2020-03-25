@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Berlin Sans FB Regular.ttf">
+            <string>BerlinSansFB-Reg</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="177"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLq-Me-brL">
+                    <rect key="frame" x="0.0" y="4" width="414" height="169"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBX-bb-Lel">
+                            <rect key="frame" x="18" y="10" width="378" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="uBu-PQ-3Xy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BerlinSansFB-Reg" family="Berlin Sans FB" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5z1-y8-58w">
+                            <rect key="frame" x="38" y="42.5" width="358" height="111.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="111.5" id="B8J-6x-dGD"/>
+                                <constraint firstAttribute="height" constant="44" id="c0M-WV-Ki8"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="B8J-6x-dGD"/>
+                                    <exclude reference="c0M-WV-Ki8"/>
+                                </mask>
+                            </variation>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="5z1-y8-58w" firstAttribute="leading" secondItem="eLq-Me-brL" secondAttribute="leading" constant="38" id="2We-2j-PAu"/>
+                        <constraint firstItem="5z1-y8-58w" firstAttribute="leading" secondItem="eLq-Me-brL" secondAttribute="trailing" constant="18" id="H30-9b-Rqw"/>
+                        <constraint firstAttribute="trailing" secondItem="FBX-bb-Lel" secondAttribute="trailing" constant="18" id="PPb-Ru-d5j"/>
+                        <constraint firstItem="FBX-bb-Lel" firstAttribute="top" secondItem="eLq-Me-brL" secondAttribute="top" constant="10" id="PUa-br-S1d"/>
+                        <constraint firstAttribute="bottom" secondItem="5z1-y8-58w" secondAttribute="bottom" constant="15" id="Qls-vy-JeQ"/>
+                        <constraint firstItem="5z1-y8-58w" firstAttribute="top" secondItem="FBX-bb-Lel" secondAttribute="bottom" constant="11.5" id="dWl-B4-SBq"/>
+                        <constraint firstAttribute="trailing" secondItem="5z1-y8-58w" secondAttribute="trailing" constant="18" id="eeR-Tz-OIR"/>
+                        <constraint firstItem="FBX-bb-Lel" firstAttribute="leading" secondItem="eLq-Me-brL" secondAttribute="leading" constant="18" id="vQW-Ci-kbH"/>
+                        <constraint firstAttribute="height" constant="169" id="zmx-hb-rFG"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="zmx-hb-rFG"/>
+                            <exclude reference="H30-9b-Rqw"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eLq-Me-brL" secondAttribute="bottom" constant="4" id="3LF-H2-WJd"/>
+                <constraint firstItem="eLq-Me-brL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="aBN-Ro-b5x"/>
+                <constraint firstItem="eLq-Me-brL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qNY-cO-kfv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eLq-Me-brL" secondAttribute="trailing" id="x4c-sB-Tyn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.59999999999999" y="246.9265367316342"/>
+        </view>
+    </objects>
+</document>

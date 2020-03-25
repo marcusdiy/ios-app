@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Berlin Sans FB Regular.ttf">
+            <string>BerlinSansFB-Reg</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CartProductCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="225" id="1Go-Wf-42e" customClass="CartProductCell" customModule="JamesJoice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Go-Wf-42e" id="dzk-V9-f6m">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="e3C-gc-ryQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" restorationIdentifier="ShadowView" translatesAutoresizingMaskIntoConstraints="NO" id="HAw-wA-cb9" customClass="ShadowView" customModule="JamesJoice" customModuleProvider="target">
+                        <rect key="frame" x="13" y="8" width="388" height="109"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyG-2O-H3I">
+                        <rect key="frame" x="13" y="8" width="388" height="109"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiS-Nj-cr2">
+                        <rect key="frame" x="20" y="26" width="42" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="250" constant="19" id="MSk-ew-gNW"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <color key="NSColor" name="colorPrimary"/>
+                                    <font key="NSFont" size="17" name="BerlinSansFB-Reg"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Una-eh-bIC">
+                        <rect key="frame" x="18" y="82" width="378" height="25"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F31-3K-9s7">
+                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="25"/>
+                                <color key="backgroundColor" name="colorPrimary"/>
+                                <inset key="titleEdgeInsets" minX="21" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Aggiungi">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="11" name="BerlinSansFB-Reg"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="actionAdd:" destination="1Go-Wf-42e" eventType="touchUpInside" id="xX8-Om-maT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATP-Z4-0vJ">
+                                <rect key="frame" x="96.5" y="0.0" width="88.5" height="25"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="0">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="BerlinSansFB-Reg"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yKL-XT-rVb">
+                                <rect key="frame" x="193" y="0.0" width="88.5" height="25"/>
+                                <color key="backgroundColor" name="colorJRed"/>
+                                <inset key="titleEdgeInsets" minX="21" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Rimuovi">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="11" name="BerlinSansFB-Reg"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="actionRemove:" destination="1Go-Wf-42e" eventType="touchUpInside" id="VYl-08-7rr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUW-QQ-Fkz">
+                                <rect key="frame" x="289.5" y="0.0" width="88.5" height="25"/>
+                                <fontDescription key="fontDescription" name="BerlinSansFB-Reg" family="Berlin Sans FB" pointSize="17"/>
+                                <color key="textColor" name="colorPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="zns-a1-6Pw"/>
+                        </constraints>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="ZZA-Wd-tn2">
+                        <rect key="frame" x="26" y="86.5" width="16" height="16"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="1Du-hF-M6z"/>
+                            <constraint firstAttribute="height" constant="16" id="tPy-zs-15P"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minus" translatesAutoresizingMaskIntoConstraints="NO" id="5Ra-iQ-aE1">
+                        <rect key="frame" x="217" y="86.5" width="16" height="16"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="ghc-03-c5g"/>
+                            <constraint firstAttribute="width" constant="16" id="vQh-4H-T6e"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HAw-wA-cb9" firstAttribute="trailing" secondItem="ZyG-2O-H3I" secondAttribute="trailing" id="1sG-wI-yC9"/>
+                    <constraint firstAttribute="bottom" secondItem="ZyG-2O-H3I" secondAttribute="bottom" constant="8" id="5T3-tN-GQr"/>
+                    <constraint firstItem="HAw-wA-cb9" firstAttribute="leading" secondItem="ZyG-2O-H3I" secondAttribute="leading" id="8Z3-oO-Bi3"/>
+                    <constraint firstItem="Una-eh-bIC" firstAttribute="leading" secondItem="dzk-V9-f6m" secondAttribute="leading" constant="18" id="8qS-Tf-kqt"/>
+                    <constraint firstItem="HAw-wA-cb9" firstAttribute="top" secondItem="ZyG-2O-H3I" secondAttribute="top" id="9TD-lM-hfw"/>
+                    <constraint firstItem="HAw-wA-cb9" firstAttribute="bottom" secondItem="ZyG-2O-H3I" secondAttribute="bottom" id="O2z-rw-EJF"/>
+                    <constraint firstItem="e3C-gc-ryQ" firstAttribute="top" secondItem="dzk-V9-f6m" secondAttribute="top" id="ODb-kY-dyF"/>
+                    <constraint firstItem="kiS-Nj-cr2" firstAttribute="top" secondItem="dzk-V9-f6m" secondAttribute="topMargin" constant="15" id="PQY-ah-ShJ"/>
+                    <constraint firstItem="e3C-gc-ryQ" firstAttribute="leading" secondItem="dzk-V9-f6m" secondAttribute="leading" id="RRG-YH-e23"/>
+                    <constraint firstItem="ZyG-2O-H3I" firstAttribute="leading" secondItem="dzk-V9-f6m" secondAttribute="leading" constant="13" id="Ws1-cQ-gOZ"/>
+                    <constraint firstAttribute="bottom" secondItem="Una-eh-bIC" secondAttribute="bottom" constant="18" id="c2a-vm-oeV"/>
+                    <constraint firstItem="5Ra-iQ-aE1" firstAttribute="leading" secondItem="yKL-XT-rVb" secondAttribute="leading" constant="6" id="cgV-eQ-7Ta"/>
+                    <constraint firstAttribute="bottom" secondItem="e3C-gc-ryQ" secondAttribute="bottom" id="gIn-VL-5fG"/>
+                    <constraint firstItem="ZZA-Wd-tn2" firstAttribute="leading" secondItem="dzk-V9-f6m" secondAttribute="leadingMargin" constant="6" id="hNl-nh-3Bc"/>
+                    <constraint firstAttribute="trailing" secondItem="Una-eh-bIC" secondAttribute="trailing" constant="18" id="hVs-Ve-OQF"/>
+                    <constraint firstItem="kiS-Nj-cr2" firstAttribute="leading" secondItem="dzk-V9-f6m" secondAttribute="leadingMargin" id="ikv-Lm-a7l"/>
+                    <constraint firstItem="5Ra-iQ-aE1" firstAttribute="centerY" secondItem="Una-eh-bIC" secondAttribute="centerY" id="jeh-H9-IVb"/>
+                    <constraint firstItem="ZZA-Wd-tn2" firstAttribute="centerY" secondItem="Una-eh-bIC" secondAttribute="centerY" id="rhU-08-NYM"/>
+                    <constraint firstItem="ZyG-2O-H3I" firstAttribute="top" secondItem="dzk-V9-f6m" secondAttribute="top" constant="8" id="u7k-7q-X5q"/>
+                    <constraint firstAttribute="trailing" secondItem="e3C-gc-ryQ" secondAttribute="trailing" id="uY9-5S-OxG"/>
+                    <constraint firstAttribute="trailing" secondItem="ZyG-2O-H3I" secondAttribute="trailing" constant="13" id="wxL-AV-iMd"/>
+                    <constraint firstItem="Una-eh-bIC" firstAttribute="top" secondItem="kiS-Nj-cr2" secondAttribute="bottom" constant="15" id="zBv-2i-k8c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mButtonAdd" destination="F31-3K-9s7" id="9MG-vm-TzS"/>
+                <outlet property="mButtonRemove" destination="yKL-XT-rVb" id="cZt-UW-1lJ"/>
+                <outlet property="mCardView" destination="ZyG-2O-H3I" id="pVC-qP-pEB"/>
+                <outlet property="mCountLabel" destination="ATP-Z4-0vJ" id="Qie-Ta-Mo9"/>
+                <outlet property="mPriceLabel" destination="sUW-QQ-Fkz" id="thj-fg-tVh"/>
+                <outlet property="mTitle" destination="kiS-Nj-cr2" id="jTT-9b-6OR"/>
+            </connections>
+            <point key="canvasLocation" x="834.78260869565224" y="119.53125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg" width="8.5" height="8.5"/>
+        <image name="minus" width="336" height="384"/>
+        <image name="plus" width="336" height="384"/>
+        <namedColor name="colorJRed">
+            <color red="0.6940000057220459" green="0.2199999988079071" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorPrimary">
+            <color red="0.0" green="0.58399999141693115" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorPrimary">
+            <color red="0.0" green="0.58399999141693115" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

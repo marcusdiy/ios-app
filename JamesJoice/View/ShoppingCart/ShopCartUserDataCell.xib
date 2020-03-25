@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ShopCartUserDataCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="106" id="HKD-V5-Kqo" customClass="ShopCartUserDataCell" customModule="JamesJoice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HKD-V5-Kqo" id="Yhn-kb-2OQ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Uh4-k5-DLr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFH-gX-c8Y" customClass="ShadowView" customModule="JamesJoice" customModuleProvider="target">
+                        <rect key="frame" x="18" y="18" width="378" height="70"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdP-Le-hhC">
+                        <rect key="frame" x="18" y="18" width="378" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqn-bv-DR9">
+                                <rect key="frame" x="0.0" y="2" width="378" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="colorPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="HTp-5N-5DS">
+                                <rect key="frame" x="0.0" y="0.0" width="378" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="39" id="kYp-w7-Vjl"/>
+                                </constraints>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="11" bottom="8" trailing="11"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HTp-5N-5DS" firstAttribute="leading" secondItem="gdP-Le-hhC" secondAttribute="leading" id="3Fx-9w-qIf"/>
+                            <constraint firstItem="HTp-5N-5DS" firstAttribute="top" secondItem="Lqn-bv-DR9" secondAttribute="bottom" constant="8" id="AOu-ou-Lyf"/>
+                            <constraint firstItem="Lqn-bv-DR9" firstAttribute="leading" secondItem="gdP-Le-hhC" secondAttribute="leading" id="Vq2-ai-Jwj"/>
+                            <constraint firstItem="Lqn-bv-DR9" firstAttribute="top" secondItem="gdP-Le-hhC" secondAttribute="top" constant="2" id="f1b-0A-SYS"/>
+                            <constraint firstAttribute="bottom" secondItem="HTp-5N-5DS" secondAttribute="bottom" id="lli-Ru-JE1"/>
+                            <constraint firstAttribute="trailing" secondItem="HTp-5N-5DS" secondAttribute="trailing" id="mH0-7q-CBf"/>
+                            <constraint firstAttribute="trailing" secondItem="Lqn-bv-DR9" secondAttribute="trailing" id="pbg-Xy-jfS"/>
+                            <constraint firstItem="HTp-5N-5DS" firstAttribute="top" secondItem="gdP-Le-hhC" secondAttribute="top" id="tVr-ZJ-qtP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Lqn-bv-DR9"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gdP-Le-hhC" firstAttribute="top" secondItem="Yhn-kb-2OQ" secondAttribute="top" constant="18" id="0sX-6V-TQB"/>
+                    <constraint firstItem="Uh4-k5-DLr" firstAttribute="leading" secondItem="Yhn-kb-2OQ" secondAttribute="leading" id="2J4-09-yGd"/>
+                    <constraint firstAttribute="bottom" secondItem="gdP-Le-hhC" secondAttribute="bottom" constant="18" id="4m8-Er-sAe"/>
+                    <constraint firstItem="gdP-Le-hhC" firstAttribute="leading" secondItem="Yhn-kb-2OQ" secondAttribute="leading" constant="18" id="5OU-xU-VFE"/>
+                    <constraint firstItem="cFH-gX-c8Y" firstAttribute="bottom" secondItem="gdP-Le-hhC" secondAttribute="bottom" id="J3o-s5-cWv"/>
+                    <constraint firstItem="cFH-gX-c8Y" firstAttribute="trailing" secondItem="gdP-Le-hhC" secondAttribute="trailing" id="OXC-Rm-adL"/>
+                    <constraint firstAttribute="bottom" secondItem="Uh4-k5-DLr" secondAttribute="bottom" id="YZm-Zq-se0"/>
+                    <constraint firstItem="cFH-gX-c8Y" firstAttribute="top" secondItem="gdP-Le-hhC" secondAttribute="top" id="c98-ey-chB"/>
+                    <constraint firstItem="cFH-gX-c8Y" firstAttribute="leading" secondItem="gdP-Le-hhC" secondAttribute="leading" id="dOF-x3-8lR"/>
+                    <constraint firstAttribute="trailing" secondItem="gdP-Le-hhC" secondAttribute="trailing" constant="18" id="kzT-qf-8Hp"/>
+                    <constraint firstItem="Uh4-k5-DLr" firstAttribute="top" secondItem="Yhn-kb-2OQ" secondAttribute="top" id="qfW-wF-Oum"/>
+                    <constraint firstAttribute="trailing" secondItem="Uh4-k5-DLr" secondAttribute="trailing" id="rQa-k3-RJ5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mBody" destination="HTp-5N-5DS" id="Axa-ZT-8GL"/>
+                <outlet property="mCard" destination="gdP-Le-hhC" id="vGk-Az-rA2"/>
+            </connections>
+            <point key="canvasLocation" x="286.95652173913044" y="72.991071428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg" width="8.5" height="8.5"/>
+        <namedColor name="colorPrimary">
+            <color red="0.0" green="0.58399999141693115" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
